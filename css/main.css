@@ -1,3 +1,129 @@
+/* Umumiy sozlamalar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Verdana", sans-serif;
+}
+
+body {
+    background-color: #eef2f8; /* oldingi: #f5f7fa */
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(90deg, #4a90e2, #50e3c2); /* oldingi: #123456, #1f3b73 */
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.search-input {
+    width: 60%;
+    max-width: 400px;
+    padding: 0.6rem 1rem;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Container */
 .container {
-  font-size: 15px;
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+}
+
+/* Button wrapper */
+.button-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-bottom: 2rem;
+}
+
+.button-wrapper button {
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 20px;
+    background-color: #50e3c2; /* oldingi: #1f3b73 */
+    color: #fff;
+    font-weight: 500;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.button-wrapper button:hover {
+    background-color: #3bb49d; /* oldingi: #0a1f4b */
+    transform: scale(1.05);
+}
+
+/* Mahsulotlar ro'yxati */
+.list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.item {
+    background-color: #fff;
+    border: 1px solid #d6d6d6;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.item img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.item h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #4a90e2; /* oldingi: #123456 */
+}
+
+.item p {
+    font-size: 0.95rem;
+    margin-bottom: 0.3rem;
+}
+
+.item p span {
+    font-weight: 600;
+    color: #000;
+}
+
+/* Footer */
+.footer {
+    background-color: #4a90e2; /* oldingi: #123456 */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
 }
